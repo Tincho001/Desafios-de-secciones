@@ -1,0 +1,201 @@
+html, body{
+  height: 100%; width: 100%;
+
+
+}
+
+body {
+ 
+
+  background-color: #EEEEEE;
+  
+
+}
+
+img {
+  width: 100%;
+
+}
+
+
+#container-header{
+  /*colocar en pixeles*/
+
+
+ 
+  background-color: #FFFFFF; 
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 3px solid #dcdcdc; 
+  font-family: 'Montserrat', sans-serif;
+  
+  
+}
+.logo {
+  width: 130px;
+  height: 130px;
+  margin-left: 20px;
+
+}
+
+.change {
+  display: none;
+}
+
+
+li {
+  display: inline-block;
+  list-style: none;
+  margin: 0px 10px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  display: inline-block;
+  text-align: center;
+}
+
+ul{
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+nav {
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.icon-menu{
+  font-size: 40px;
+  display: none!important;
+}
+
+
+
+
+
+
+
+
+
+#container-nav {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+
+}
+
+
+.nav-anchor {
+  font-size: 18px;
+}
+
+
+
+/*EMPIEZA PRIMERA SECCION*/
+
+
+.container-section1 {
+  margin-top: 10px;
+  border: 3px solid #dcdcdc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+font-family:  'Montserrat', sans-serif;
+}
+
+
+
+.info-per { text-align: center;
+
+
+}
+
+h1{
+  text-shadow: 2px 4px #05576b8a;
+  font-size: 30px;
+
+}
+p {
+  font-size: 15px;
+  text-align: justify;
+  text-shadow: 1px 1px#29323D;
+  color:#646464;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+button {
+display: inline-block;
+  font-family: 'Quicksand';
+  letter-spacing: 0.5px;
+  font-size: 15px;
+  color: #EEEEEE;
+  width: 200px;
+  height: 40px;
+  border-radius: 25px;
+  background-color: #29323D;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  box-shadow: 3px 3px black;
+
+}
+
+.imagen-info {
+
+  border: 15px inset #B8B8B8;
+}
+
+
+@media (max-width: 700px){
+  ul {
+      display: none;
+  }
+  li{
+      width: 100%;
+      text-align: center;
+  }
+
+  .icon-menu {
+      display: inline-block!important;
+  }
+  
+  .change:checked ~ ul {
+      display: inline-block!important;
+  }
+
+  .container-section1 {
+    
+    flex-direction: column;
+  }
+
+
+
+
+
+
+}
+
+
+
+
+/*EMPIEZA SEGUNDA SECCION*/
+
+
+
+
+
+
+
