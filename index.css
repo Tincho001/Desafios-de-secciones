@@ -13,9 +13,13 @@ img {
 
 }
 
+/* HEADER-----------------------------------------------*/
+
+
+
 
 #container-header{
-  /*colocar en pixeles*/
+
 
 
  
@@ -98,13 +102,15 @@ nav {
 }
 
 .men1:hover {
-  cursor: pointer;
+  cursor: pointer; 
+  color: crimson;
   transform: scale(1.2)
+  
 }
 
 
 
-/*EMPIEZA PRIMERA SECCIONnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn*/
+/*SECCION UNO-------------------------------------------*/
 
 
 .container-section1 {
@@ -150,7 +156,7 @@ display: inline-block;
   background-color: #2F2E41;
   -moz-box-shadow: 10px 10px 14px -7px rgba(0,0,0,0.75);
   box-shadow: 10px 10px 14px -7px rgba(0,0,0,0.75);
- /* box-shadow: 3px 3px black;*/
+ 
 
   
 
@@ -175,49 +181,10 @@ height: 50%;
 
 
 
-@media (max-width: 750px){
-  ul {
-      display: none;
-  }
-  li{
-      width: 100%;
-      text-align: center;
-  }
-
-  .icon-menu {
-      display: inline-block!important;
-  }
-  
-  .change:checked ~ ul {
-      display: inline-block!important;
-  }
-
-  .container-section1 {
-    
-    flex-direction: column;
-  }
-
-.parrafo-1 { font-size: 20px;}
-
-.bot-1 {flex-wrap: wrap;}
-
-#container-section3 {
-  flex-direction: column;
-}
-
-.icons-im {flex-direction: column;
-}
-
-#container-section4 {flex-direction: column;}
-
-.contenedor-imagenes {flex-direction: column;
-  flex-wrap: wrap;
-align-items: center;}
-}
 
 
 
-/*EMPIEZA SEGUNDA SECCION*/
+/*SECCION DOS----------------------------------------*/
 #container-section2 {
 
 margin-top: 10px;
@@ -226,7 +193,7 @@ margin-top: 10px;
   flex-direction: column;
   align-items: center;
  
-  background-image:url(/imagen/components@2x.png);
+  background-image:url(/imagen/StolB1R.png);
   background-repeat: no-repeat;
   background-position-x: right;
 
@@ -236,7 +203,14 @@ margin-top: 10px;
 
 }
 
+.fond1 {position: relative;
+ opacity: 0.3;
+width: 40%;
+height: 20%;
+left: ;}
+
 .parrafo-2 {
+  
   font-family:  'Montserrat', sans-serif;
 font-size: clamp(7px, 5vw, 20px);
 text-align: justify;
@@ -249,18 +223,19 @@ margin-right: 60px;
 
 
 
-/*SECCION TRESSSSSSS*/
+/*SECCION TRES------------------------------------------*/
     
 #container-section3 {
 
   margin-top: 10px;
+  
   border: 3px solid #dcdcdc;
   font-family: 'Montserrat', sans-serif;
   display: flex;
   flex-direction:column;
 align-items: center;
 
-background-image: url(/imagen/foundations@2x.png);
+background-image: url(/imagen/letras1.png);
 background-repeat: no-repeat;
 
 
@@ -276,7 +251,7 @@ h3 {
 h4 { font-size: 20px;}
 
 .icons-im {
-  margin-bottom: 50px;
+  margin-bottom: 150px;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -291,6 +266,7 @@ height: 300px;
 }
 
 .card-body {
+  
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -318,22 +294,19 @@ margin: 10px;
   background-color: #E6E6E6;
 
 }
- 
-  
-
-
 
 .card-title {
-  
+  font-size: 20px;
 }
 
 .card-text {
+  
 
   text-align: center;
   
 }
 
-/*SECCION CUATROOOO*/
+/*SECCION CUATRO-------------------------------------*/
 
 
 #container-section4 {
@@ -346,6 +319,10 @@ margin: 10px;
   align-items: center;
 
  
+
+background-image: url(/imagen/iroj.png);
+background-repeat: no-repeat;
+background-position: right top;
 
 
 }
@@ -418,4 +395,69 @@ transition: 0.2s;
 font-size: 15px;
 text-align: center;
 margin-top: 10px;
-margin-bottom: 50px;}
+margin-bottom: 100px;}
+
+/*fooooteerrrrrrr*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*RESPONSIVE--------------------------------------------*/
+
+
+@media (max-width: 750px){
+  ul {
+      display: none;
+  }
+  li{
+      width: 100%;
+      text-align: center;
+  }
+
+  .icon-menu {
+      display: inline-block!important;
+  }
+  
+  .change:checked ~ ul {
+      display: inline-block!important;
+  }
+
+  .container-section1 {
+    
+    flex-direction: column;
+  }
+
+.parrafo-1 { font-size: 20px;}
+
+.bot-1 {flex-wrap: wrap;}
+
+#container-section3 {
+  flex-direction: column;
+}
+
+.icons-im {flex-direction: column;
+}
+
+#container-section4 {flex-direction: column;
+align-items: none;}
+
+.contenedor-imagenes {flex-direction: column;
+  flex-wrap: wrap;
+align-items: center;}
+
+h4 { text-align: center;}
+
+.card {
+  width: none;
+}
+}
