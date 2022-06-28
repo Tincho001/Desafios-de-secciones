@@ -317,14 +317,9 @@ margin: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
-
- 
-
 background-image: url(/imagen/iroj.png);
 background-repeat: no-repeat;
 background-position: right top;
-
-
 }
 
 
@@ -437,6 +432,7 @@ align-items: center;}
   background-color:#ffffff;
   color:#4b4c4d;
   font-family: 'Montserrat', sans-serif;
+  border: 3px solid #dcdcdc;
 }
 
 .footer-basic ul {
@@ -493,20 +489,36 @@ align-items: center;}
   margin-bottom:0;
 }
 
-.ion-social-instagram:hover{color:  #C83A9A;}
+.ion-social-instagram:hover{color:  #C83A9A }
 
 
 
 
 
 
+/*seccion proyect------------------------------------------*/
 
+.contim {display: flex;
+  flex-wrap: wrap;
 
+}
 
+.imclas {
+  margin: 10px;
+  margin-bottom: 100px;
+  height: 200px;
+  width: 200px;
+  border: 10px black ;
+  border: 1px solid #000000;
+  -moz-box-shadow: 10px 10px 14px -4px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 14px -4px rgba(0,0,0,0.75);
+  
 
+}
 
+.imclas:hover { opacity: 0.4; cursor: pointer;
 
-
+}
 
 
 
@@ -575,4 +587,12 @@ h4 { text-align: center;}
 .card {
   width: none;
 }
+
+
+.contim {flex-direction: column;
+  flex-wrap: wrap;
+align-items: center;}
+
+
+h3 { text-align: center;}
 }
